@@ -1,0 +1,16 @@
+<table>
+    <thead>
+    <tr>
+        <th>Gospodarz</th>
+        <th>gosc</th>
+        <th>wynik</th>
+    </tr>
+    </thead>
+    {% for game in games %}
+        <tr>
+            <td>{{ game.team_home.name }}</td>
+            <td>{{ game.team_away.name }}</td>
+            <td>{{ game.team_home_goals }} - {{ game.team_away_goals }}</td>
+        </tr>
+    {% endfor %}
+</table>

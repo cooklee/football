@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>pozycja</th><th>Nazwa</th><th>punkty</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in teams %}
+                <tr><td>{{ forloop.counter }}</td><td>{{  item.name}}</td><td>{{  item.points}}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

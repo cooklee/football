@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+    {% include 'games.html' with games=hgames%}
+    {% include 'games.html' with games=agames%}
+{% endblock %}
